@@ -1,0 +1,606 @@
+@media only screen and (max-width: 600px) {
+   .skipmain{
+       display: none;
+   }
+}
+@media (prefers-reduced-motion: reduce) {
+    .gif-animation {
+        animation: none !important;
+    }
+}
+body{
+    @media (prefers-reduced-motion: no-preference) {
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+    }
+       background-color: lightcyan;
+       font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+       
+      
+}
+   body.travel{
+       background-color: wheat;
+   }
+   body.recipes{
+       background-color: lightyellow;
+   }
+  
+   h1{
+       text-align: center;
+       font-size:30px;
+       font-weight: bolder;
+       text-transform: uppercase;
+       color: crimson;
+       text-decoration: underline;
+       font-family: fantasy;
+   }
+   main h2{
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+   }
+   main p{
+       width: 90%;
+       padding: 2%;
+       border: 3px purple dashed;
+       margin: 5px;
+       font-size: 100%;
+   }
+   main h3{
+       font-size: 15px;
+       font-weight: bold;
+
+   }
+   
+    .top img{
+       display: flex;
+       max-width: 80%;
+       margin-bottom: 2%;
+       flex-direction: column;
+       max-height: auto;
+
+   }
+   
+   ul.topnav{
+
+        background-color:coral; 
+        
+        display:flex;
+    
+        flex-direction: column;
+        align-items: center;
+
+       
+   }
+   
+   
+   ul.topnav li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: auto;
+       
+
+
+        border: 2px black solid;
+        margin: auto;
+        font-size: 20px;
+        transition-property: height, color;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+       
+           
+    }
+    
+    ul.topnav li:hover{
+       
+        align-items: center;
+        background-color:yellow;
+        color: red;
+    }
+
+    ul.topnav .a,.b,.c{
+        font-size: 25px;
+        display: block;
+       width: 100%;
+       height: 30px;
+
+    }
+    ul.topnav li .c{ 
+        
+        height: 50px;
+        font-size: 30px;
+        background-color:lightgreen;
+        
+    }
+    .photolist{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
+        gap: 5%;
+       border: 3px black solid;
+       margin:auto;
+       margin-bottom: 5%;
+       padding-bottom: 25%;
+    }
+    .photolist im{
+        padding: 2%;
+        width: 40%;
+        height: auto;
+    }
+    .photolist figcaption{
+        font-size: 10px;
+        width: auto;
+    }
+    ol.likes{
+        border: 3px red solid;
+        text-align: center;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    ol.likes li{
+        border: 1px darkslategray dashed;
+        margin: 1%;
+        padding: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+    figure.ingredients{
+        margin: 3%;
+        padding: 1%;
+        text-align: center;
+        color: darkgreen;
+        border: 3px black solid;
+    }
+    figure.instructions{
+       border: 2px red dashed;
+       padding: 2%;
+    }
+    figure.instructions ol{
+        padding: 5px;
+    }
+   
+@media only screen and (min-width: 600px){
+
+    .skipmain{
+        color: blue;
+        text-decoration: underline;
+        
+        
+
+    }
+   body{
+    @media (prefers-reduced-motion: no-preference) {
+        
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+    }
+       background-color: lightcyan;
+       
+      
+   }
+   body.travel{
+       background-color: wheat;
+   }
+   body.recipes{
+       background-color: lightyellow;
+   }
+  
+   h1{
+       padding-top: 7%;
+       text-align: center;
+       font-size:30px;
+       font-weight: bolder;
+       text-transform: uppercase;
+       color: crimson;
+       text-decoration: underline;
+       font-family: fantasy;
+   }
+   main h2{
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+   }
+   main p{
+       width: 90%;
+       padding: 2%;
+       border: 3px purple dashed;
+       margin: 5px;
+       font-size: 100%;
+   }
+   main h3{
+       font-size: 18px;
+       font-weight: bold;
+       text-align: center;
+      
+
+   }
+   img{
+       display: block;
+       margin: auto;
+       border: 2px darkblue dashed;
+       padding: 2px;
+   }
+   img:hover{
+       border: 2px red solid;
+   }
+   
+    .top img{
+       display: flex;
+       max-width: 80%;
+        margin: auto;
+       margin-bottom: 2%;
+
+       flex-direction: row;
+       max-height: auto;
+
+   }
+   .travel .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+   }
+   .travel .top img{
+       max-width: 46%;
+        max-height: auto;
+
+   }
+   
+   ul.topnav{
+
+        position:absolute;
+        width: 100%;
+        display:flex;
+        background-color: transparent;
+        flex-direction:row;
+        align-items: center;
+        padding: 0; 
+        margin: 0;
+
+      
+   }
+   
+   
+   ul.topnav li{
+        display: block;
+        width: 33%;
+        text-align: center;
+        height: auto;
+       
+        background-color: coral;
+
+        border: 2px black solid;
+        margin: auto;
+        font-size: 20px;
+        transition-property: height, color;
+        transition-duration: 4s;
+        transition-timing-function: linear;
+       
+           
+    }
+    
+    ul.topnav li:hover{
+       
+        align-items: center;
+        background-color:yellow;
+        color: red;
+    }
+
+    .topnav .c { background-color: green; } 
+    .topnav .b { background-color: red; } 
+    .topnav .a { background-color: orange; } 
+    
+
+    .topnav a:hover {
+      background-color:yellow;
+      color: black;
+      transform: scale(1); 
+    }
+    
+    
+    .topnav a:active {
+      background-color: #555;
+      transform: scale(0.9); 
+    }
+    
+    
+    }
+    .photolist{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); 
+        gap: 5%;
+       border: 3px black solid;
+       margin:auto;
+       margin-bottom: 5%;
+       padding-top: 5%;
+       padding-left: 2%;
+       padding-right: 2%;
+       padding-bottom: 25%;
+       
+    }
+    .photolist im{
+        padding: 2%;
+        width: 40%;
+        height: auto;
+    }
+    .photolist figcaption{
+        font-size: 15px;
+        width: auto;
+
+    }
+    ol.likes{
+        display: flex;
+        flex-direction: row;
+        border: 3px red solid;
+        text-align: center;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    ol.likes li{
+        width: 30%;
+        font-size: 20px;
+        font-weight: 700;
+        border: 1px darkslategray dashed;
+        margin: 1%;
+        padding: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+    figure.ingredients{
+        margin: 3%;
+        padding: 1%;
+        text-align: center;
+        color: darkgreen;
+        border: 3px black solid;
+    }
+    figure.instructions{
+       border: 2px red dashed;
+       padding: 2%;
+    }
+    figure.instructions ol{
+        padding: 5px;
+    }
+   
+    .travelp{
+        display: flex;
+        flex-direction: row;
+    }
+
+@media only screen and(min-width: 800 px){
+    .skipmain{
+        color: blue;
+        text-decoration: underline;
+        
+
+    }
+    .skipmain:focus{
+        border: 1px black dashed;
+        padding: 1px;
+    }
+   body{
+    @media (prefers-reduced-motion: no-preference) {
+        
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+    }
+       background-color: lightcyan;
+       
+      
+   }
+   body.travel{
+       background-color: wheat;
+   }
+   body.recipes{
+       background-color: lightyellow;
+   }
+  
+   h1{
+       padding-top: 7%;
+       text-align: center;
+       font-size:30px;
+       font-weight: bolder;
+       text-transform: uppercase;
+       color: crimson;
+       text-decoration: underline;
+       font-family: fantasy;
+   }
+   main h2{
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+   }
+   
+   main p{
+       width: 90%;
+       padding: 2%;
+       border: 3px purple dashed;
+       margin: 5px;
+       font-size: 100%;
+   }
+   main h3{
+       font-size: 18px;
+       font-weight: bold;
+       text-align: center;
+      
+
+   }
+   img{
+       display: block;
+       margin: auto;
+   }
+   
+    .top img{
+       display: flex;
+       max-width: 80%;
+        margin: auto;
+       margin-bottom: 2%;
+
+       flex-direction: row;
+       max-height: auto;
+
+   }
+   .travel .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+   }
+   .travel .top img{
+       max-width: 46%;
+        max-height: auto;
+
+   }
+   main h1{
+       color: black;
+   }
+   
+   ul.topnav{
+
+        position: fixed;
+        width: 100%;
+        display:flex;
+        background-color: transparent;
+        flex-direction:row;
+        align-items: center;
+        padding: 0; 
+        margin: 0;
+
+      
+   }
+   
+   
+   ul.topnav li{
+        display: block;
+        width: 33%;
+        text-align: center;
+        height: auto;
+       
+        background-color: coral;
+
+        border: 2px black solid;
+        margin: auto;
+        font-size: 20px;
+        transition-property: height, color;
+        transition-duration: 4s;
+        transition-timing-function: linear;
+       
+           
+    }
+    
+    ul.topnav li:hover{
+       
+        align-items: center;
+        background-color:yellow;
+        color: red;
+    }
+
+    ul.topnav .a,.b,.c{
+        font-size: 25px;
+        display: block;
+       width: 100%;
+       height: 30px;
+
+    }
+    ul.topnav li .c{ 
+        
+        height: 50px;
+        font-size: 30px;
+        background-color:lightgreen;
+        
+    }
+    .photolist{
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); 
+        gap: 5%;
+       border: 3px black solid;
+       margin:auto;
+       margin-bottom: 5%;
+       padding-top: 5%;
+       padding-left: 2%;
+       padding-right: 2%;
+       padding-bottom: 25%;
+       
+    }
+    .photolist im{
+        padding: 2%;
+        width: 40%;
+        height: auto;
+    }
+    .photolist figcaption{
+        font-size: 15px;
+        width: auto;
+
+    }
+    ol.likes{
+        display: flex;
+        flex-direction: row;
+        border: 3px red solid;
+        text-align: center;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    ol.likes li{
+        width: 30%;
+        font-size: 20px;
+        font-weight: 700;
+        border: 1px darkslategray dashed;
+        margin: 1%;
+        padding: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+    figure.ingredients{
+        margin: 3%;
+        padding: 1%;
+        text-align: center;
+        color: darkgreen;
+        border: 3px black solid;
+    }
+    figure.instructions{
+       border: 2px red dashed;
+       padding: 2%;
+    }
+    figure.instructions ol{
+        padding: 5px;
+    }
+   
+    .travelp{
+        display: flex;
+        flex-direction: row;
+    }
+    body{
+        background-blend-mode: color;
+        background-image: url("/images/background image.jpeg");
+    }
+
+}
+   
+
+
+
+
+
+
